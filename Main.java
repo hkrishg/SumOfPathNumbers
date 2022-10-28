@@ -24,6 +24,7 @@ class Main {
   private static int sumOfPathSum(TreeNode currentNode, int pathSum) {
     if (currentNode == null)
       return 0;
+    // calc the path number of the current node
     pathSum = pathSum * 10 + currentNode.val;
     if (currentNode.left == null && currentNode.right == null)
       return pathSum;
